@@ -2,7 +2,7 @@ import numpy as np
 from sklearn.model_selection import StratifiedGroupKFold
 from typing import List, Tuple
 
-def stratifiedGroupKFold(x: np.ndarray, y: np.ndarray, group: np.ndarray, n_splits: int = 10) -> Tuple[List[np.ndarray], List[np.ndarray], List[np.ndarray], List[np.ndarray]]:
+def stratifiedGroupKFold(x: np.ndarray, y: np.ndarray, group: np.ndarray, n_splits: int = 10) -> Tuple[List[np.ndarray], List[np.ndarray], List[np.ndarray], List[np.ndarray], List[np.ndarray], List[np.ndarray]]:
     sgkf = StratifiedGroupKFold(n_splits=n_splits)
     
     fold_x_train = []
